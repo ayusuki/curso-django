@@ -1,0 +1,3 @@
+~ Fazer canais aparecerem no sidebar da página de detalhe de noticia
+~ Fazer links clicaveis no corpo e no lead de noticias e chamadas
+~ Ativar link do canal ativo no sidebar
