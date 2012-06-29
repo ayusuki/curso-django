@@ -76,10 +76,21 @@ The current URL, bits/, didn't match any of these.-bottom: 40px;
             <ul class="nav nav-list">
               <li class="nav-header">Canais</li>
                 {% for secao in secoes %}
-                  <li><a href="{% url capa-secao secao=secao%}">{{secao}}</a></li>
+                    {% if secao == secao_atual%}    
+                        <li class="active">
+                            <a href="{% url capa-secao secao=secao%}"
+                            >{{secao}}</a></li>
+                            </li>
+                            <a href="{% url lista-secao secao=secao%}">(Ver todas)</a>                        
+                    {%else%}
+                        <li>
+                            <a href="{% url capa-secao secao=secao%}"
+                            >{{secao}}</a>
+                        </li>
+                    {%endif%}                      
                 {% endfor %}  
               <li class="nav-header">Sidebar</li>
-              <li class="active"><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
               <li><a href="#">Link</a></li>
               <li><a href="#">Link</a></li>
               <li><a href="#">Link</a></li>
