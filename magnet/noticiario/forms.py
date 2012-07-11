@@ -17,3 +17,8 @@ class FormContato(forms.Form):
 class FormNoticia(forms.ModelForm):
     class Meta:
         model = Noticia
+        
+class FormContribNoticia(forms.ModelForm):
+    class Meta:
+        model = Noticia
+        fields = ('titulo','resumo','corpo')
