@@ -128,7 +128,7 @@ INSTALLED_APPS = (
     'noticiario',
     'bootstrap_toolkit',
     'contatos',
-    
+    'blog',
 )
 
 # A sample logging configuration. The only tangible logging

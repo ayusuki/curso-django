@@ -3,8 +3,6 @@
 from django import forms
 from .models import Noticia
 
-
-
 class FormContato(forms.Form):
     nome = forms.CharField()
     email = forms.EmailField()
